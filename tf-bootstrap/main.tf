@@ -22,10 +22,10 @@ terraform {
 # ==========================================
 
 resource "kind_cluster" "this" {
-  name           = "flux"
+  name           = "flux3"
   wait_for_ready = true
 
-  kubeconfig_path = abspath("${path.root}/.terraform/kubeconfig")
+  # kubeconfig_path = abspath("${path.root}/.terraform/kubeconfig")
 
   kind_config {
     kind        = "Cluster"
